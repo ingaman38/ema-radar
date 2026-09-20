@@ -59,7 +59,7 @@ const fmt=(n,d=2)=>Number(n).toLocaleString('tr-TR',{maximumFractionDigits:d});
 const vol=n=>n>=1e9?(n/1e9).toFixed(1)+' Mr$':n>=1e6?(n/1e6).toFixed(1)+' Mn$':fmt(n,0)+' $';
 const stamp=()=>new Date().toLocaleTimeString('tr-TR',{hour:'2-digit',minute:'2-digit'});
 const sleep=ms=>new Promise(r=>setTimeout(r,ms));
-const STABLES=new Set(['USDC','FDUSD','TUSD','USDP','BUSD','DAI','AEUR','EUR','TRY','BRL','GBP','AUD','RUB','UAH','BIDR','IDRT','NGN','PLN','RON','ARS','ZAR']);
+const STABLES=new Set(['USDC','FDUSD','BFUSD','TUSD','USDP','BUSD','DAI','AEUR','EUR','TRY','BRL','GBP','AUD','RUB','UAH','BIDR','IDRT','NGN','PLN','RON','ARS','ZAR']);
 const LEVERAGED=/(UP|DOWN|BULL|BEAR)$/;
 
 function ema(values,period){
@@ -123,8 +123,8 @@ function analyze(ticker,klines,maxAtr,direction){
   const level=dist<=0.10?['ÇOK YAKIN',3]:dist<=0.25?['YAKIN',2]:['İZLE',1];
   return {symbol:ticker.symbol,base,volume_rank:ticker.volume_rank,direction:dir,phase:'APPROACH',bars_since_cross:null,distance_atr:dist,convergence_pct_6h:convergence,eta_hours_linear:eta,quote_volume_24h:+ticker.quoteVolume,change_pct_24h:+ticker.priceChangePercent,level:level[0],urgency:level[1],ema52:e52[i],ema320:e320[i],last:+ticker.lastPrice};
 }
-function binanceUrl(x){return `https://app.binance.com/en/trade/${encodeURIComponent(x.base)}_USDT?type=spot`;}
-function openBinance(url){window.location.href=url;}
+function binanceUrl(x){return `https://www.binance.com/en/trade/${encodeURIComponent(x.base)}_USDT?type=spot`;}
+function openBinance(url){window.location.assign(url);}
 function render(a){
   $('sCount').textContent=a.length;$('sUp').textContent=a.filter(x=>x.direction==='UP').length;$('sDown').textContent=a.filter(x=>x.direction==='DOWN').length;
   if(!a.length){$('cards').innerHTML='<div class="empty">Bu eşikte aday yok. Bu da bir sonuç; piyasa her dakika dramatik davranmak zorunda değil.</div>';return;}
