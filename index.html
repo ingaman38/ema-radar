@@ -18,8 +18,8 @@
 .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin:11px 0}.stat{background:linear-gradient(180deg,#101821,#0d131b);border:1px solid var(--line);border-radius:14px;padding:10px 5px;text-align:center}.stat .k{font-size:8px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em}.stat .v{font-size:20px;font-weight:850;margin-top:3px;letter-spacing:-.7px}.stat.up .v{color:var(--green)}.stat.down .v{color:var(--red)}
 .progressWrap{display:none;margin:9px 1px 3px}.progressText{display:flex;justify-content:space-between;font-size:10px;color:var(--muted);margin-bottom:5px}.progress{height:5px;border-radius:99px;overflow:hidden;background:#17212c}.progress i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--cyan),var(--green));transition:width .2s ease}
 .section-head{display:flex;justify-content:space-between;align-items:end;margin:16px 2px 8px}.section-head h2{margin:0;font-size:16px}.section-head span{font-size:10px;color:var(--muted)}
-.cards{display:grid;gap:8px}.card{position:relative;overflow:hidden;background:linear-gradient(180deg,#111923,#0d141c);border:1px solid var(--line);border-radius:17px;padding:13px}.card:before{content:"";position:absolute;inset:0 auto 0 0;width:3px;background:var(--accent)}.card.up{--accent:var(--green)}.card.down{--accent:var(--red)}.topline{display:flex;align-items:center;justify-content:space-between;gap:10px}.coin{display:flex;align-items:center;gap:10px}.badge{width:40px;height:40px;border-radius:12px;display:grid;place-items:center;background:#182331;border:1px solid #263649;font-size:10px;font-weight:900}.sym{font-size:17px;font-weight:900;letter-spacing:-.25px}.pair{font-size:9px;color:var(--muted);font-weight:650}.rank{font-size:9px;color:var(--muted);margin-top:2px}.dir{font-size:11px;font-weight:900}.up .dir{color:var(--green)}.down .dir{color:var(--red)}.level{font-size:9px;font-weight:900;border-radius:999px;padding:5px 7px;margin-top:4px;text-align:center}.l3{background:var(--green);color:#04100b}.l2{background:var(--amber);color:#171003}.l1{background:var(--cyan);color:#061117}
-.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:5px;margin-top:11px}.metric{background:#0b1118;border:1px solid #192430;border-radius:11px;padding:8px 5px}.metric .k{font-size:7px;text-transform:uppercase;color:var(--muted);letter-spacing:.04em}.metric .v{font-size:12px;font-weight:850;margin-top:3px}.metric .v.pos{color:var(--green)}.metric .v.neg{color:var(--red)}.bar{height:4px;background:#17212c;border-radius:99px;margin-top:11px;overflow:hidden}.bar i{display:block;height:100%;background:var(--accent);border-radius:99px}
+.cards{display:grid;gap:8px}.card{position:relative;overflow:hidden;background:linear-gradient(180deg,#111923,#0d141c);border:1px solid var(--line);border-radius:17px;padding:13px}.card:before{content:"";position:absolute;inset:0 auto 0 0;width:3px;background:var(--accent)}.card.up{--accent:var(--green)}.card.down{--accent:var(--red)}.card{cursor:pointer}.card:active{transform:scale(.995)}.topline{display:flex;align-items:center;justify-content:space-between;gap:10px}.coin{display:flex;align-items:center;gap:10px}.badge{width:40px;height:40px;border-radius:12px;display:grid;place-items:center;background:#182331;border:1px solid #263649;font-size:10px;font-weight:900}.sym{font-size:17px;font-weight:900;letter-spacing:-.25px}.pair{font-size:9px;color:var(--muted);font-weight:650}.rank{font-size:9px;color:var(--muted);margin-top:2px}.dir{font-size:11px;font-weight:900}.up .dir{color:var(--green)}.down .dir{color:var(--red)}.level{font-size:9px;font-weight:900;border-radius:999px;padding:5px 7px;margin-top:4px;text-align:center}.l3{background:var(--green);color:#04100b}.l2{background:var(--amber);color:#171003}.l1{background:var(--cyan);color:#061117}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:5px;margin-top:11px}.metric{background:#0b1118;border:1px solid #192430;border-radius:11px;padding:8px 5px}.metric .k{font-size:7px;text-transform:uppercase;color:var(--muted);letter-spacing:.04em}.metric .v{font-size:12px;font-weight:850;margin-top:3px}.metric .v.pos{color:var(--green)}.metric .v.neg{color:var(--red)}.bar{height:4px;background:#17212c;border-radius:99px;margin-top:11px;overflow:hidden}.bar i{display:block;height:100%;background:var(--accent);border-radius:99px}.phase{display:inline-flex;align-items:center;gap:5px;margin-top:9px;padding:5px 8px;border-radius:999px;background:#15202b;border:1px solid #263646;color:#b9c7d6;font-size:9px;font-weight:850}.phase.cross{color:#07110d;background:var(--green);border-color:transparent}.down .phase.cross{background:var(--red);color:#190408}.actions{display:flex;justify-content:flex-end;margin-top:10px}.inspect{border:1px solid #2a3a4c;border-radius:10px;background:#172330;color:#eaf3fb;font-size:10px;font-weight:850;padding:8px 10px;cursor:pointer}.inspect:active{opacity:.72}
 .empty,.error{border:1px solid var(--line);background:#0f161f;border-radius:18px;padding:28px 16px;text-align:center;color:var(--muted);font-size:12px;line-height:1.45}.error{display:none;color:#ffc0c8;border-color:#542631;background:#211219}.hint{margin:11px 3px;color:var(--muted);font-size:9px;line-height:1.5}.bottom{position:fixed;left:0;right:0;bottom:0;z-index:20;padding:9px 12px calc(9px + env(safe-area-inset-bottom));background:linear-gradient(180deg,rgba(7,11,16,0),rgba(7,11,16,.92) 25%,#070b10 60%)}.bottom-inner{max-width:760px;margin:auto}.scan{width:100%;border:0;border-radius:15px;padding:14px 16px;background:linear-gradient(135deg,#1d8566,#17637d);color:white;font-size:14px;font-weight:850;box-shadow:0 12px 32px rgba(0,0,0,.35)}.scan:disabled{opacity:.6}.scan small{display:block;font-size:8px;font-weight:650;opacity:.78;margin-top:2px}
 @media(max-width:390px){.app{padding-left:9px;padding-right:9px}.hero h1{font-size:27px}.controls{gap:4px;padding:5px}.control{padding:7px 6px}.control select{font-size:11px}.stats{gap:4px}.stat .v{font-size:18px}.grid{gap:4px}.metric{padding:7px 4px}.metric .v{font-size:11px}}
 </style>
@@ -46,9 +46,9 @@
 
   <div class="progressWrap" id="progressWrap"><div class="progressText"><span id="progressLabel">Taranıyor…</span><span id="progressNum">0/100</span></div><div class="progress"><i id="progressBar"></i></div></div>
   <div id="error" class="error"></div>
-  <div class="section-head"><h2>Kesişime yaklaşanlar</h2><span>1h · EMA52 ↔ EMA320</span></div>
+  <div class="section-head"><h2>Radar sonuçları</h2><span>Yaklaşan + son 8 bar</span></div>
   <section class="cards" id="cards"><div class="empty">Taramayı başlat. Telefon işi yapsın, sen çizgi nöbetinden kurtul.</div></section>
-  <div class="hint">Filtre: EMA52/EMA320 aralığı son 6 saatte kapanıyor olmalı. Yukarı taramada EMA52 hâlâ EMA320'nin altında ve yükseliyor; son 12 saatte EMA52 zaten üstte kaldıysa “yeniden kesişim” gürültüsünü azaltmak için elenir. 24s hacme göre USDT Spot evreni taranır; sabit/fiat çiftleri atlanır. Canlı son mum kullanılır.</div>
+  <div class="hint">Radar iki grubu gösterir: (1) EMA52/EMA320 aralığı son 6 saatte kapanan kesişim adayları, (2) EMA52 ile EMA320 son 8 adet 1s mum içinde kesişmiş coinler. “Kesişim +0” kesişimin bulunduğu mevcut mumu, “+7” yedi bar sonrasını ifade eder. Coin kartına veya “Binance'te aç” düğmesine dokununca ilgili USDT Spot çifti Binance uygulamasına yönlendirilir. 24s hacme göre USDT Spot evreni taranır; sabit/fiat çiftleri atlanır. Canlı son mum kullanılır.</div>
 </main>
 
 <div class="bottom"><div class="bottom-inner"><button class="scan" id="scan">Top 100'ü tara<small>Hesap doğrudan bu iPhone'da yapılır</small></button></div></div>
@@ -89,7 +89,27 @@ function analyze(ticker,klines,maxAtr,direction){
   const c=k.map(x=>+x[4]),h=k.map(x=>+x[2]),l=k.map(x=>+x[3]);
   const e52=ema(c,52),e320=ema(c,320),a14=atr(h,l,c,14);const i=c.length-1,j=i-6;
   if(j<320||e52[i]==null||e320[i]==null||a14[i]==null||!a14[i])return null;
+
   const gap=e52[i]-e320[i],gap6=e52[j]-e320[j],dist=Math.abs(gap)/a14[i];
+  const base=ticker.symbol.slice(0,-4);
+
+  // 1) Son 8 mum içinde gerçek kesişim oldu mu? Kesişim mumu dahil: +0 ... +7.
+  let cross=null;
+  for(let z=i;z>=Math.max(321,i-7);z--){
+    const prev=e52[z-1]-e320[z-1],cur=e52[z]-e320[z];
+    if(prev<=0 && cur>0){cross={direction:'UP',index:z,bars:i-z};break;}
+    if(prev>=0 && cur<0){cross={direction:'DOWN',index:z,bars:i-z};break;}
+  }
+  if(cross && (direction==='BOTH'||cross.direction===direction)){
+    return {
+      symbol:ticker.symbol,base,volume_rank:ticker.volume_rank,direction:cross.direction,phase:'POST_CROSS',bars_since_cross:cross.bars,
+      distance_atr:dist,convergence_pct_6h:null,eta_hours_linear:null,
+      quote_volume_24h:+ticker.quoteVolume,change_pct_24h:+ticker.priceChangePercent,
+      level:`KESİŞİM +${cross.bars}`,urgency:4,ema52:e52[i],ema320:e320[i],last:+ticker.lastPrice
+    };
+  }
+
+  // 2) Henüz kesişmemiş ama kesişime yaklaşanlar.
   if(dist>maxAtr)return null;
   const convergence=(Math.abs(gap6)-Math.abs(gap))/Math.abs(gap6||1)*100;
   if(!(convergence>0))return null;
@@ -101,13 +121,23 @@ function analyze(ticker,klines,maxAtr,direction){
   if(!dir || (direction!=='BOTH'&&dir!==direction))return null;
   const closeRate=Math.abs(gap6)-Math.abs(gap);const eta=closeRate>0?(Math.abs(gap)/(closeRate/6)):null;
   const level=dist<=0.10?['ÇOK YAKIN',3]:dist<=0.25?['YAKIN',2]:['İZLE',1];
-  const base=ticker.symbol.slice(0,-4);
-  return {symbol:ticker.symbol,base,direction:dir,distance_atr:dist,convergence_pct_6h:convergence,eta_hours_linear:eta,quote_volume_24h:+ticker.quoteVolume,change_pct_24h:+ticker.priceChangePercent,level:level[0],urgency:level[1],ema52:e52[i],ema320:e320[i],last:+ticker.lastPrice};
+  return {symbol:ticker.symbol,base,volume_rank:ticker.volume_rank,direction:dir,phase:'APPROACH',bars_since_cross:null,distance_atr:dist,convergence_pct_6h:convergence,eta_hours_linear:eta,quote_volume_24h:+ticker.quoteVolume,change_pct_24h:+ticker.priceChangePercent,level:level[0],urgency:level[1],ema52:e52[i],ema320:e320[i],last:+ticker.lastPrice};
 }
+function binanceUrl(x){return `https://app.binance.com/en/trade/${encodeURIComponent(x.base)}_USDT?type=spot`;}
+function openBinance(url){window.location.href=url;}
 function render(a){
   $('sCount').textContent=a.length;$('sUp').textContent=a.filter(x=>x.direction==='UP').length;$('sDown').textContent=a.filter(x=>x.direction==='DOWN').length;
   if(!a.length){$('cards').innerHTML='<div class="empty">Bu eşikte aday yok. Bu da bir sonuç; piyasa her dakika dramatik davranmak zorunda değil.</div>';return;}
-  $('cards').innerHTML=a.map(x=>{const up=x.direction==='UP',eta=x.eta_hours_linear==null?'—':(x.eta_hours_linear>99?'99s+':fmt(x.eta_hours_linear,1)+'s'),chg=x.change_pct_24h,bar=Math.max(3,Math.min(100,100*(1-Math.min(x.distance_atr,1))));return `<article class="card ${up?'up':'down'}"><div class="topline"><div class="coin"><div class="badge">${x.base.slice(0,4)}</div><div><div class="sym">${x.base}<span class="pair">/USDT</span></div><div class="rank">Hacim #${x.volume_rank} · ${vol(x.quote_volume_24h)}</div></div></div><div><div class="dir">${up?'▲ YUKARI':'▼ AŞAĞI'}</div><div class="level l${x.urgency}">${x.level}</div></div></div><div class="grid"><div class="metric"><div class="k">Mesafe</div><div class="v">${fmt(x.distance_atr,3)} ATR</div></div><div class="metric"><div class="k">6s yakınsama</div><div class="v">${fmt(x.convergence_pct_6h,1)}%</div></div><div class="metric"><div class="k">Kaba süre</div><div class="v">${eta}</div></div><div class="metric"><div class="k">24s</div><div class="v ${chg>=0?'pos':'neg'}">${chg>=0?'+':''}${fmt(chg,2)}%</div></div></div><div class="bar"><i style="width:${bar}%"></i></div></article>`;}).join('');
+  $('cards').innerHTML=a.map(x=>{
+    const up=x.direction==='UP',crossed=x.phase==='POST_CROSS';
+    const eta=crossed?'—':(x.eta_hours_linear==null?'—':(x.eta_hours_linear>99?'99s+':fmt(x.eta_hours_linear,1)+'s'));
+    const conv=crossed?'—':fmt(x.convergence_pct_6h,1)+'%';
+    const chg=x.change_pct_24h,bar=Math.max(3,Math.min(100,100*(1-Math.min(x.distance_atr,1))));
+    const phaseText=crossed?`✓ Kesişimden sonra ${x.bars_since_cross}. bar`:'Kesişime yaklaşıyor';
+    const url=binanceUrl(x);
+    const levelClass=crossed?'phase cross':`level l${x.urgency}`;
+    return `<article class="card ${up?'up':'down'}" role="link" tabindex="0" onclick="openBinance('${url}')" onkeydown="if(event.key==='Enter')openBinance('${url}')"><div class="topline"><div class="coin"><div class="badge">${x.base.slice(0,4)}</div><div><div class="sym">${x.base}<span class="pair">/USDT</span></div><div class="rank">Hacim #${x.volume_rank} · ${vol(x.quote_volume_24h)}</div></div></div><div><div class="dir">${up?'▲ YUKARI':'▼ AŞAĞI'}</div><div class="${levelClass}">${x.level}</div></div></div><div class="phase ${crossed?'cross':''}">${phaseText}</div><div class="grid"><div class="metric"><div class="k">Mesafe</div><div class="v">${fmt(x.distance_atr,3)} ATR</div></div><div class="metric"><div class="k">6s yakınsama</div><div class="v">${conv}</div></div><div class="metric"><div class="k">Kaba süre</div><div class="v">${eta}</div></div><div class="metric"><div class="k">24s</div><div class="v ${chg>=0?'pos':'neg'}">${chg>=0?'+':''}${fmt(chg,2)}%</div></div></div><div class="bar"><i style="width:${bar}%"></i></div><div class="actions"><button class="inspect" type="button" onclick="event.stopPropagation();openBinance('${url}')">Binance'te aç ↗</button></div></article>`;
+  }).join('');
 }
 async function scan(){
   const btn=$('scan'),err=$('error'),wrap=$('progressWrap'); btn.disabled=true;err.style.display='none';wrap.style.display='block';$('progressBar').style.width='0%';$('progressLabel').textContent='Hacim listesi alınıyor…';btn.innerHTML='Taranıyor…<small>Binance → iPhone → EMA hesabı</small>';
@@ -117,7 +147,11 @@ async function scan(){
     let universe=tickers.filter(x=>x.symbol.endsWith('USDT')&&+x.quoteVolume>0).filter(x=>{const b=x.symbol.slice(0,-4);return !STABLES.has(b)&&!LEVERAGED.test(b)}).sort((a,b)=>+b.quoteVolume-+a.quoteVolume).slice(0,topN);
     universe.forEach((x,i)=>x.volume_rank=i+1);$('sUniverse').textContent=universe.length;$('progressLabel').textContent='1 saatlik mumlar taranıyor…';
     const results=await pool(universe,6,async t=>{const k=await getJSON(`${API}/api/v3/klines?symbol=${encodeURIComponent(t.symbol)}&interval=1h&limit=600`);return analyze(t,k,maxAtr,direction);},(done,total)=>{$('progressNum').textContent=`${done}/${total}`;$('progressBar').style.width=(done/total*100).toFixed(1)+'%';});
-    const candidates=results.filter(Boolean).filter(x=>!x.error).sort((a,b)=>a.distance_atr-b.distance_atr||b.convergence_pct_6h-a.convergence_pct_6h);render(candidates);$('updated').textContent='Son tarama '+stamp();$('progressLabel').textContent='Tamamlandı';
+    const candidates=results.filter(Boolean).filter(x=>!x.error).sort((a,b)=>{
+      if(a.phase!==b.phase)return a.phase==='POST_CROSS'?-1:1;
+      if(a.phase==='POST_CROSS')return a.bars_since_cross-b.bars_since_cross||a.distance_atr-b.distance_atr;
+      return a.distance_atr-b.distance_atr||b.convergence_pct_6h-a.convergence_pct_6h;
+    });render(candidates);$('updated').textContent='Son tarama '+stamp();$('progressLabel').textContent='Tamamlandı';
   }catch(e){err.textContent='Tarama yapılamadı: '+e.message+'. Safari içerik engelleyici/VPN varsa kapatıp tekrar dene.';err.style.display='block';}
   finally{btn.disabled=false;btn.innerHTML=`Top ${$('topn').value}'ü tara<small>Hesap doğrudan bu iPhone'da yapılır</small>`;setTimeout(()=>{$('progressWrap').style.display='none'},1200);}
 }
